@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Movie Search App</h1>
+    <div id="search">
+    <div class="filmtitle">
+        <input id="movieTitle" type="text" placeholder="Enter movie title">
+        <button onclick="searchMovies()">Search</button>
+    </div>
+    <div class="movieyear">
+        <input id="movieYear" type="text" placeholder="Enter movie year">
+        <button onclick="searchMoviesByYear()">Search</button>
+    </div>
+     <div class="moviegenre">
+        <input id="movieGenre" type="text" placeholder="Enter movie genre">
+        <button onclick="searchMoviesByGenre()">Search</button>
+    </div>
+</div>
+ <div id="results"></div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+</html>
